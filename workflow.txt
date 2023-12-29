@@ -1,0 +1,9 @@
+install package for passport -> 
+->npm i passport,
+-> passport-local
+->passport-local-mongoose 
+->mongoose-express-session
+
+1.write app.js code first and write it after view engine and before logger.
+2.setup user js properly
+3.in index.js try register first and then other code as well

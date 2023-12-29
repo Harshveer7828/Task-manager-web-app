@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+body {
+  background-color: rgb(35, 37, 37);
+  padding: 0 1vw;
+}
+#main > form {
+  transform: translate(30%);
+  margin-top: 5%;
+}
+#main > form input {
+  padding: 1vw 0.5vw;
+  background-color: transparent;
+  border: 1px solid #dadada;
+  color: white;
+}
+#main > form #button {
+  background-color: #dbcfcf;
+  color: black;
+  font-weight: 900;
+}
+.cards {
+  color: white;
+  width: 17%;
+  background-color: #121111;
+  padding: 2vw 1vw;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+.card-container {
+  display: flex;
+  gap: 2vw;
+  margin-top: 3vw;
+  flex-wrap: wrap;
+  padding: 0 5vw;
+}
+.cards h3 {
+  margin-top: 0.5vw;
+  font-weight: 100;
+  font-size: 0.8vw;
+}
+.cards p {
+  margin-top: 0.5vw;
+}
+.cards #delete-button {
+  padding: 0.5vw 1vw;
+  color: white;
+  font-weight: 900;
+  margin-top: 1vw;
+  background-color: rgb(188, 50, 50);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cards #update-button {
+  padding: 0.5vw 1vw;
+  color: rgb(26, 24, 24);
+  font-weight: 900;
+  margin-top: 1vw;
+  background-color: rgb(219, 178, 15);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#Message {
+  background-color: #302d2d;
+  color: white;
+  transform: translateY(1.3vw);
+  border: 1px solid #dadada;
+}
+.updateForm {
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.updateForm form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5vw;
+}
+.updateForm form > input {
+  padding: 0.7vw 1vw;
+  background-color: transparent;
+  border: 1px solid #dadada;
+  color: white;
+}
+.updateForm>form>#update {
+    padding: 0.5vw 1vw;
+    color: rgb(26, 24, 24);
+    font-weight: 900;
+    margin-top: 1vw;
+    background-color: rgb(219, 178, 15);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

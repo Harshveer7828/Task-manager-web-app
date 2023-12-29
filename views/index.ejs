@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    document
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <div id="main">
+    <div class="updateForm">
+      <form action="/update/<%user._id%>" method="post">
+        <input type="text" name="username" id="">
+        <input type="email" name="email" id="">
+        <textarea name="message" id="Message" cols="30" rows="5" placeholder="Message"></textarea>
+        <input type="submit" value="Update" id="update">
+      </form>
+    </div>
+    <form action="/details" method="post">
+      <input type="text" name="username" placeholder="enter username">
+      <input type="email" name="email" placeholder="enter email">
+      <textarea name="message" id="Message" cols="30" rows="3"></textarea>
+      <input id="button" type="submit" value="ADD TASK">
+    </form>
+    <div class="card-container">
+      <%user.forEach(function(details){ %>
+        <div class="cards">
+          <h2>
+            <%=details.username%>
+          </h2>
+          <h3>
+            <%=details.email%>
+          </h3>
+          <p>
+            <%=details.message%>
+          </p>
+          <a href="/delete/<%=details._id%>"><input id="delete-button" type="button" value="Delete"></a>
+          <a href="/update/<%=details._id%>"><input id="update-button" type="button" value="Update"></a>
+        </div>
+        <%})%>
+    </div>
+
+  </div>
+</body>
+<script>
+  document.querySelector("#update").addEventListener("click", function (){
+    document.querySelector(".updateForm").style.display="flex";
+  })
+</script>
+
+</html>
